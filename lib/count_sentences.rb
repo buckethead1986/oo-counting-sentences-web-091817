@@ -16,6 +16,6 @@ class String
   end
 
   def count_sentences #how do I split along '.' but not '...' in one line?
-    self.split(/[.!?]/).reject {|element| element.empty? }.count #removes blank '""' elements.
+    self.split(/[.!?]/).reject {|element| element.empty? }.count #'reject' and 'empty?'removes blank '""' elements from the array (takes care of multiple !!, ...).
   end
 end
